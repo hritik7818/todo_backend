@@ -19,7 +19,7 @@ app.use("/api/todos",todoRouters);
 
 app.use(errorHandler);
 // Health check
-app.get('/',(req,res)=>{
+app.get('/health',(req,res)=>{
     res.send("server is running...");
 });
 
